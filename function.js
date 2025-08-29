@@ -2,12 +2,12 @@
 const emergencyServices = [
     { name: "National Emergency", nameEn: "Emergency", number: "999", iconSrc: "assets/emergency.png", category: "All", categoryColor: "bg-red-500" },
     { name: "Police Helpline", nameEn: "Police", number: "999", iconSrc: "./assets/police.png", category: "Police", categoryColor: "bg-blue-500" },
-    { name: "Fire Service", nameEn: "Fire", number: "999", iconSrc: "/assets/fire-service.png", category: "Fire", categoryColor: "bg-orange-500" },
-    { name: "Ambulance Service", nameEn: "Health", number: "1994-999999", iconSrc: "/assets/ambulance.png", category: "Health", categoryColor: "bg-green-500" },
-    { name: "Women & Child Helpline", nameEn: "Help", number: "109", iconSrc: "/assets/brac.png", category: "Help", categoryColor: "bg-pink-500" },
-    { name: "Anti-Corruption Helpline", nameEn: "Govt.", number: "106", iconSrc: "/assets/police.png", category: "Govt.", categoryColor: "bg-purple-500" },
-    { name: "Electricity Helpline", nameEn: "Electricity", number: "16216", iconSrc: "/assets/emergency.png", category: "Electricity", categoryColor: "bg-yellow-500" },
-    { name: "Bangladesh Railway", nameEn: "Travel", number: "163", iconSrc: "/assets/Bangladesh-Railway.png", category: "Travel", categoryColor: "bg-indigo-500" }
+    { name: "Fire Service", nameEn: "Fire", number: "999", iconSrc: "./assets/fire-service.png", category: "Fire", categoryColor: "bg-orange-500" },
+    { name: "Ambulance Service", nameEn: "Health", number: "1994-999999", iconSrc: "./assets/ambulance.png", category: "Health", categoryColor: "bg-green-500" },
+    { name: "Women & Child Helpline", nameEn: "Help", number: "109", iconSrc: "./assets/brac.png", category: "Help", categoryColor: "bg-pink-500" },
+    { name: "Anti-Corruption Helpline", nameEn: "Govt.", number: "106", iconSrc: "./assets/police.png", category: "Govt.", categoryColor: "bg-purple-500" },
+    { name: "Electricity Helpline", nameEn: "Electricity", number: "16216", iconSrc: "./assets/emergency.png", category: "Electricity", categoryColor: "bg-yellow-500" },
+    { name: "Bangladesh Railway", nameEn: "Travel", number: "163", iconSrc: "./assets/Bangladesh-Railway.png", category: "Travel", categoryColor: "bg-indigo-500" }
 ];
 
 
