@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .pulse-heart {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navbar -->
+    <div class="navbar bg-white shadow-lg px-4">
+        <div class="flex-1">
+            <div class="flex items-center">
+                <img class="h-[50px] w-[50px]" src="/assets/logo.png " alt="">
+                <a class="text-xl font-bold text-gray-800">Emergency <br> Service</a>
+            </div>
+        </div>
+        <div class="flex-none">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center bg-pink-100 px-3 py-1 rounded-full">
+                    <img src="/assets/heart.png" alt="Coin" class="w-5 h-5 mr-2 inline-block">
+                    <span id="heartCount" class="font-semibold">0</span>
+                </div>
+                <div class="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
+                    <img src="/assets/coin.png" alt="Coin" class="w-5 h-5 mr-2 inline-block">
+                    <span id="coinCount" class="font-semibold">100</span>
+                </div>
+                <div class="flex items-center bg-green-100 px-3 py-1 rounded-full  space-x-2">
+                    <h3 class="mx-auto font-semibold">Copy </h3>
+                    <span id="copyCount" class="font-semibold">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-[40vh] flex flex-col justify-center items-center text-white p-8"
+    style="background: linear-gradient(180deg, #013223 0%, #006747 50%, #013223 100%);">
+<div class="text-center">
+   <div class="mb-6">
+       <img class="mx-auto" src="/assets/logo.png" alt="">
+   </div>
+   <h1 class="text-4xl md:text-6xl font-bold mb-4">Emergency Service Directory</h1>
+   <p class="text-xl md:text-2xl opacity-90">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+</div>
+</section>
+
+
+    <!-- Main Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Emergency Cards Section -->
+            <div class="lg:col-span-2">
+               
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="emergencyCards">
+                    <!-- Cards generated dynamically -->
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-history text-blue-600 mr-2"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Call History</h3>
+                        </div>
+                        <button id="clearHistory" class="btn btn-sm btn-outline btn-error">
+                            <i class="fas fa-trash mr-1"></i>
+                            Clear
+                        </button>
+                    </div>
+                    <div id="callHistory" class="space-y-3">
+                        <p class="text-gray-500 text-center">No calls made yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
