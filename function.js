@@ -1,6 +1,6 @@
 
 const emergencyServices = [
-    { name: "National Emergency", nameEn: "Emergency", number: "999", iconSrc: "./assets/emergency.png", category: "All", categoryColor: "bg-red-500" },
+    { name: "National Emergency", nameEn: "Emergency", number: "999", iconSrc: "assets/emergency.png", category: "All", categoryColor: "bg-red-500" },
     { name: "Police Helpline", nameEn: "Police", number: "999", iconSrc: "/assets/police.png", category: "Police", categoryColor: "bg-blue-500" },
     { name: "Fire Service", nameEn: "Fire", number: "999", iconSrc: "/assets/fire-service.png", category: "Fire", categoryColor: "bg-orange-500" },
     { name: "Ambulance Service", nameEn: "Health", number: "1994-999999", iconSrc: "/assets/ambulance.png", category: "Health", categoryColor: "bg-green-500" },
